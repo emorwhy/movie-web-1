@@ -133,33 +133,22 @@
 
   <title>movie-web</title>
 
-  {{#if opensearchEnabled }}
-  <!-- OpenSearch -->
-  <link rel="search" type="application/opensearchdescription+xml" title="movie-web" href="/opensearch.xml">
-
-  <!-- Google Sitelinks -->
-  <script type="application/ld+json">
-        {
-          "@context": "https://schema.org",
-          "@type": "WebSite",
-          "url": "{{ routeDomain }}",
-          "potentialAction": {
-          "@type": "SearchAction",
-          "target": {
-            "@type": "EntryPoint",
-            "urlTemplate": "{{ routeDomain }}/browse/?q={search_term_string}"
-          },
-          "query-input": "required name=search_term_string"
-          }
-        }
-      </script>
-  {{/if}}
+  <script type="module" crossorigin src="/assets/index-CQtvjRok.js"></script>
+  <link rel="modulepreload" crossorigin href="/assets/auth-72H9TcpW.js">
+  <link rel="modulepreload" crossorigin href="/assets/caption-parsing-B-atfEeL.js">
+  <link rel="modulepreload" crossorigin href="/assets/vendor-BLI4_ydL.js">
+  <link rel="modulepreload" crossorigin href="/assets/react-dom-CEJeLXPx.js">
+  <link rel="modulepreload" crossorigin href="/assets/locales-DDhh_Os3.js">
+  <link rel="modulepreload" crossorigin href="/assets/language-db-CTkLv2pZ.js">
+  <link rel="modulepreload" crossorigin href="/assets/Icons-CZFEeYpu.js">
+  <link rel="modulepreload" crossorigin href="/assets/hls-2_Gpnevg.js">
+  <link rel="stylesheet" crossorigin href="/assets/Icons-7LetCtYR.css">
+  <link rel="stylesheet" crossorigin href="/assets/index-BGiAG4Ut.css">
 </head>
 
 <body>
   <noscript>You need to enable JavaScript to run this app.</noscript>
   <div id="root"></div>
-  <script type="module" src="/src/index.tsx"></script>
 </body>
 
 </html>
